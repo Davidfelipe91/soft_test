@@ -14,5 +14,8 @@ public class Main {
         System.out.println(sumResult);
 
         */
+
+        Anagram anagram = new Anagram();
+        System.out.println(anagram.compareWord("Mani","Iman"));
     }
 }
