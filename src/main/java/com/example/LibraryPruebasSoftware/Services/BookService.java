@@ -40,7 +40,8 @@ public class BookService {
                     b.setTitle (book.getTitle());
                     b.setAuthor(book.getAuthor());
                     b.setIsbn(book.getIsbn());
-                    return bookRepository.save(b);
+                    return this.saveBook(b);
+//                            bookRepository.save(b);
                 })
                 .orElseThrow(() -> new RuntimeException("Libro no encontrado con id: " + id));
     }
